@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/previa.css">
+    <title>Teamo</title>
+</head>
+<body>
+    <h1> Estas canciones son para ti <img src="img/sonrojadasssso.jpg" alt="cora" width="20px" height="20px"></h1>
+    <div class="container">
+        <video controls autoplay loop>
+            <source src="video/vid4.mp4" type="video/mp4">
+        </video> 
+        <video controls autoplay loop>
+            <source src="video/vid3.mp4" type="video/mp4">
+        </video>
+    </div>   
+    <div class="container2">
+        <video controls autoplay loop>
+            <source src="video/vid2.mp4" type="video/mp4">
+        </video> 
+        <video controls autoplay loop>
+            <source src="video/vid9.mp4" type="video/mp4">
+        </video>
+    </div>    
+    <div class="container3">
+        <video controls autoplay loop>
+            <source src="video/vid7.mp4" type="video/mp4">
+        </video> 
+        <video controls autoplay loop>
+            <source src="video/vid8.mp4" type="video/mp4">
+        </video>
+    </div> 
+    <div class="container4">
+        <form method="get" action="probabilidad.html">
+            <p>Continuar => </p> 
+            <input name="boton1" type="image" src="img/corazon2.jpg" onclick="showPrompt()">  
+       </form>
+    </div> 
+    <script>
+        function showPrompt() {
+            var mensaje = "Estás a punto de conocer el amor de tu vida. ¿Deseas continuar?";
+            var respuesta = prompt(mensaje, "SI");
+            
+            if (respuesta && respuesta.toLowerCase() === "si") {
+                window.location.href = "probabilidad.html"; //redirigir a la siguiente página
+            }
+        }
+    </script>
+    
+</body>
+</html>
